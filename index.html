@@ -1,5 +1,4 @@
 
-pointers
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,8 +8,23 @@ pointers
 <body>
   <div class="container center">
     <h1>Welcome to Sudoku Solver</h1>
-    <p>Enter your Sudoku puzzle and solve it instantly!</p>
-    <a href="solver.html" class="button">Start Solving</a>
+    <p>Enter your name to begin</p>
+    
+    <input type="text" id="username" placeholder="Your Name">
+    <br><br>
+    <button class="button" onclick="startSolving()">Start Solving</button>
   </div>
+
+  <script>
+    function startSolving() {
+      const name = document.getElementById("username").value;
+      if (name.trim() === "") {
+        alert("Please enter your name");
+        return;
+      }
+      localStorage.setItem("sudokuUsername", name);
+      window.location.href = "solver.html";
+    }
+  </script>
 </body>
 </html>
