@@ -7,10 +7,19 @@
 <body>
   <div class="container">
     <h1>Sudoku Solver</h1>
+    <h3 id="user-greeting"></h3>
+
     <div class="grid" id="sudoku-grid"></div>
     <button onclick="solveSudoku()">Solve</button>
     <button onclick="clearGrid()">Clear</button>
   </div>
+
   <script src="script.js"></script>
+  <script>
+    const user = localStorage.getItem("sudokuUsername");
+    if (user) {
+      document.getElementById("user-greeting").innerText = `Hello, ${user}!`;
+    }
+  </script>
 </body>
 </html>
