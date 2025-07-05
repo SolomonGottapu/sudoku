@@ -52,4 +52,4 @@ board = [
 
 🔗 Live Project
 Demo: Click here to try it out!
-GitHub: Repository Link
+GitHub: Repository Link : https://github.com/SolomonGottapu/sudoku
