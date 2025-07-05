@@ -51,5 +51,5 @@ board = [
 [7, 6, 3, 4, 1, 8, 2, 5, 9]
 
 🔗 Live Project
-Demo: Click here to try it out!
+Demo: Click here to try it out: https://solomongottapu.github.io/sudoku/
 GitHub: Repository Link : https://github.com/SolomonGottapu/sudoku
